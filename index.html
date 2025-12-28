@@ -19,6 +19,36 @@
       <link rel="stylesheet" href="css/flaticon.css">
       <link rel="stylesheet" href="css/icomoon.css">
       <link rel="stylesheet" href="css/style.css">
+      <style>
+         .tech-image-container {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 400px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+         }
+         .tech-image-container::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><defs><linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:rgba(255,255,255,0.1);stop-opacity:1" /><stop offset="100%" style="stop-color:rgba(255,255,255,0.05);stop-opacity:1" /></linearGradient></defs><rect x="50" y="50" width="300" height="300" rx="20" fill="url(%23grad)"/><circle cx="200" cy="150" r="40" fill="rgba(255,255,255,0.3)"/><path d="M120 250 Q200 220 280 250" stroke="rgba(255,255,255,0.3)" stroke-width="8" fill="none" stroke-linecap="round"/><rect x="100" y="100" width="200" height="200" rx="10" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="3"/><circle cx="140" cy="320" r="15" fill="rgba(255,255,255,0.3)"/><circle cx="200" cy="330" r="15" fill="rgba(255,255,255,0.3)"/><circle cx="260" cy="320" r="15" fill="rgba(255,255,255,0.3)"/><text x="200" y="60" font-family="Arial" font-size="32" fill="rgba(255,255,255,0.8)" font-weight="bold" text-anchor="middle">DevOps</text><text x="200" y="360" font-family="Arial" font-size="24" fill="rgba(255,255,255,0.6)" text-anchor="middle">Engineer</text></svg>') center/contain no-repeat;
+            opacity: 0.8;
+         }
+         .tech-icon-display {
+            position: relative;
+            z-index: 1;
+            font-size: 120px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.9);
+            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+         }
+      </style>
    </head>
    <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
       <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
@@ -42,16 +72,13 @@
             <div class="slider-item ">
                <div class="overlay"></div>
                <div class="container">
-                  <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-                     <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_12.jpg);">
-                        <div class="overlay"></div>
-                     </div>
-                     <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                        <div class="text">
+                  <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+                     <div class="col-md-8 d-flex align-items-center ftco-animate text-center">
+                        <div class="text" style="width: 100%;">
                            <span class="subheading">Hello!</span>
                            <h1 class="mb-4 mt-3">I'm <span>Saranraj</span></h1>
-                           <h2 class="mb-4"> DevOps Engineer</h2>
-                           <p> <a href="#" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+                           <h2 class="mb-4">DevOps & DevSecOps Engineer</h2>
+                           <p> <a href="#skills-section" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
                         </div>
                      </div>
                   </div>
@@ -60,15 +87,13 @@
             <div class="slider-item">
                <div class="overlay"></div>
                <div class="container">
-                  <div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-                     <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/about.jpg);">
-                        <div class="overlay"></div>
-                     </div>
-                     <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                        <div class="text">
-                           <span class="subheading">Hello!</span>
-                           <h1 class="mb-4 mt-3">I'm  <span>DevOps Engineer</span> at Sparkout TechSolution in Coimbatore, India</h1>
-                           <p>  <a href="#" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+                  <div class="row d-flex no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+                     <div class="col-md-8 d-flex align-items-center ftco-animate text-center">
+                        <div class="text" style="width: 100%;">
+                           <span class="subheading">Welcome!</span>
+                           <h1 class="mb-4 mt-3">I'm <span>DevOps & DevSecOps Engineer</span></h1>
+                           <h2 class="mb-4">at Sparkout TechSolution, Coimbatore, India</h2>
+                           <p><a href="#about-section" class="btn btn-white btn-outline-white py-3 px-4">Know More</a></p>
                         </div>
                      </div>
                   </div>
